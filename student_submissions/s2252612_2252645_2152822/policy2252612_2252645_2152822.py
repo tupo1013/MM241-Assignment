@@ -23,7 +23,6 @@ class Policy2252612_2252645_2152822(Policy):
             return self.get_action_skyline(observation, info)
         elif self.policy_id == 2:
             return self.get_action_bfff(observation, info)
-        pass
 
     def get_action_skyline(self, observation, info):
         stocks = observation["stocks"]
